@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const puerto = 5002;
+const puerto = 5000;
 const path = require('path');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
