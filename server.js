@@ -36,6 +36,6 @@ app.post('/', (req, res) => {
     if (cantidad_disponible[3] <= 2) { alerta[3] = "Hay menos de 2 articulos disponibles, es necesario comprar más" };
 });
 
-app.listen(process.env.port, () => {
+app.listen(process.env.PORT, () => {
     console.log("Ejecutando servidor en el puerto 5000");
 });
