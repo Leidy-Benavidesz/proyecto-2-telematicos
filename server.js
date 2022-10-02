@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const puerto = 5000;
 const path = require('path');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -37,6 +36,6 @@ app.post('/', (req, res) => {
     if (cantidad_disponible[3] <= 2) { alerta[3] = "Hay menos de 2 articulos disponibles, es necesario comprar más" };
 });
 
-app.listen(puerto, () => {
+app.listen(process.env.port, () => {
     console.log("Ejecutando servidor en el puerto 5000");
 });
